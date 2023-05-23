@@ -1,0 +1,157 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+--Blue:hsl(246,80%,60%);
+--Lightorange:hsl(15,100%,70%);
+--Softblue:hsl(195,74%,62%);
+--Lightred:hsl(348,100%,68%);
+--Limegreen:hsl(145,58%,55%);
+--Violet:hsl(264,64%,52%);
+--Softorange:hsl(43,84%,65%);
+--Verydarkblue:hsl(226,43%,10%);
+--Darkblue:hsl(235,46%,20%);
+--Desaturatedblue:hsl(235,45%,61%);
+--PaleBlue:hsl(236,100%,87%);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Verydarkblue);
+    overflow: hidden;
+}
+.container {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    width: 25%;
+    height: 85%;
+    background-color: var(--Darkblue);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+.profile {
+    width: 100%;
+    height: 300px;
+    background-color: var(--Blue);
+    border-radius: 15px;
+}
+.avatar {
+    background-image: url(./images/image-jeremy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin:20px 0px 0px 20px;
+}
+.for {
+    color: var(--PaleBlue);
+    margin:40px 0px 0px 20px;
+}
+.name {
+    width: 50px;
+    color: white;
+    font-weight: 300;
+    font-size: 31px;
+    margin:0px 0px 0px 20px;
+    line-height: 40px;
+}
+.right-container {
+    width: 80%;
+    height: 100%;
+    margin-left: 60px;
+}
+.options {
+    color: white;
+    margin:10px 0px 0px 20px;
+    line-height: 35px;
+    color: var(--PaleBlue);
+}
+.option {
+    cursor: pointer;
+}
+.option:hover {
+    color: white;
+}
+
+.card-row {
+    margin:50px 0px 0px 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-row:nth-child(2) {
+     margin:170px 0px 0px 0px;
+}
+.card {
+    width: 200px;
+    height: 143px;
+    background-color: var(--Lightorange);
+    border-radius: 10px;
+    position: relative;
+    margin-left: 20px;
+    /* overflow: hidden; */
+}
+.logo {
+    position: absolute;
+    top: -0px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.inner-card {
+    width: 100%;
+    height: 150px;
+    background-color: var(--Darkblue);
+    position: absolute;
+    bottom: -49px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.top-bar {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin:20px 0px 0px 20px;
+    position: relative;
+}
+.title {
+    color: white;
+}
+.elips {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.elips:hover {
+    color: white;
+}
+.card-info {
+    margin: 20px 0px 0px 20px;
+}
+.hr {
+    color: white;
+    font-weight: 300;
+    font-size: 41px;
+}
+.from {
+    color: var(--PaleBlue);
+    font-weight: 300;
+}
